@@ -1,0 +1,947 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #000;
+    background-color: #fff;
+    font-weight: 500;
+    overflow-x: hidden;
+
+}
+.navbar-link {
+    color: inherit;
+    text-decoration: none;
+}
+#nav-links {
+    list-style: none;
+}
+
+/* Navbar Styling */
+.logo img {
+    height: 60px;
+    width: 180px;
+    /* Control logo height */
+    max-width: 100%;
+    /* Maintain aspect ratio */
+    margin-right: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: block;
+    object-fit: cover;
+    margin-top: 10%;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background: #000;
+    border-bottom: 1px solid #fff;
+    color: #fff;
+}
+.navbar .nav-links {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    margin-right: 4rem;
+}
+.navbar .nav-links li {
+    display: inline;
+    font-size: 18px;
+}
+/*.nav-links li a:hover{
+    transform: scale(1.1);
+    transition:0.3s
+    
+  }*/
+  .nav-links li .navbar-link:hover {
+    
+    text-decoration: underline;
+  }
+.navbar .nav-links input {
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+}
+.navbar .hamburger {
+    display: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+/* -----------------------------Web Section Styling------------------------------ */
+.App {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 20px;
+    margin-left: 50px;
+}
+.App .content {
+    max-width: 50%;
+}
+.App .content .main-heading{
+    font-size: 33px;
+    margin-bottom: 20px;
+   
+}
+.App .content .main-content {
+
+    margin-bottom: 20px;
+    font-size: 20px !important;
+    text-align: justify;
+}
+.App .btn {
+    margin-top: 1rem;
+    padding: 10px 20px;
+    font-size: 20px;
+    background: #000080;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-left: -2rem ;
+}
+.btn:hover{
+    background-color: #56CCF2;
+    transform: scale(1);
+    transition:0.3s
+    }
+.App .App-image{
+    width: 50%;
+    }
+    
+    .App-image .image_appDev{
+        width: 30vw;
+        height: 60vh;
+        margin-left: 12rem;
+        margin-top: 3rem;
+    }
+    /*--------------------------card section Styling-----------------------*/
+    /* .dotted-line {
+        width: 100vw;
+        border-bottom: 2px dashed #aca3a3;
+    }
+     */
+    .cards {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        background-color: white;
+        gap: 15px;
+    }
+    
+    .card-content {
+        width: 90%; /* Ensure content is responsive */
+        max-width: 1200px; /* Restrict maximum width */
+        margin: 0 auto; /* Center the content */
+        text-align: center; 
+        padding: 10px; 
+    }
+    
+    .card_main_heading{
+        font-size: 38px;
+        margin-bottom: 10px;
+        color: #000; 
+        margin-top: 60px;
+    }
+    
+    .card_main_paragraph {
+        font-size: 17px; 
+        color: #555; 
+        margin-top: 5px; /* Space above paragraph */
+        line-height: 1.5; /* Add line spacing for readability */
+    }
+    
+     .card {
+        width: 250px;
+        height: 300px;
+        background-color: #0a0c38;
+        color: white;
+        border-radius: 15px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 20px;
+        font-family: Arial, sans-serif;
+        margin-top: -14rem;
+       
+    }
+    .card .icon {
+        width: 60px;
+        height: 60px;
+        background-color: white;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+    
+    .card .icon i {
+        width: 40px;
+        height: 30px;
+    
+    }
+    .icon {
+        width: 60px;
+        height: 60px;
+        background-color: #ffffff;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+    
+    .icon i {
+        font-size: 24px;
+        /* Adjust size as needed */
+        color: #0a0c38;
+        /* Icon color */
+    }
+    .card .card_heading {
+        margin: 0;
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+    
+    .card .card_paragraph{
+        font-size: 14px;
+        margin: 0;
+        margin-bottom: 20px;
+    }
+    
+    .card .card_link {
+        color: #ffffff;
+        text-decoration: none;
+        font-size: 14px;
+        font-weight: bold;
+        display: flex;
+        align-items: center;
+    }
+    
+    .card .card_link:hover {
+        text-decoration: underline;
+    }
+    
+    .card .card_link::after {
+        content: "\2192";
+        /* Unicode for arrow */
+        margin-left: 5px;
+    }
+   
+    /*-------------------------------Master section Styling-----------------------*/
+    .Master {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 50px 20px;
+        margin-left: 0px;
+        background-color: #0f1355;
+      
+     }
+    
+    .Master .Master-content {
+        max-width: 50%;
+        
+    }
+    
+    .Master .Master-heading {
+        font-size: 36px;
+        margin-bottom: 20px;
+        margin-top: -120px;
+        margin-left: 3rem;
+        color: white;
+    }
+    
+    .Master .Master-content .Master_paragraph{
+        margin-left: 3rem;
+        margin-bottom: 20px;
+        font-size: 12px;
+        text-align: justify;
+        color: #555;
+    }
+    .list{
+    margin-top: 1rem;
+    list-style-type: disc;
+    margin-left: 4rem;
+    font-size: 17px;
+    text-align: justify;
+    color: #555;
+    line-height: 1.8;
+    }
+    
+    .Master .Master-image {
+    
+        margin-top: -80px;
+        margin-right: -2rem;
+    }
+    
+    .Master-image .image2_app {
+        width: 35vw;
+        /* Scale image to fit the container without overflow */
+        height: 70vh;
+        margin-top: 50px;
+        margin-right: 5rem;
+    }
+    /*-------------------Video Section Styling---------------------*/
+
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+    
+    .title {
+        text-align: center;
+        font-size: 2rem;
+        margin-bottom: 30px;
+    }
+    
+   .call-to-action {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 40px;
+        align-items: center;
+        padding: 20px;
+        /*border: 1px solid #ddd;
+        border-radius: 10px;*/
+    }
+    
+    /*.call-to-action .cta_video {
+        width: 100%;
+        max-width: 450px;
+        border-radius: 10px;
+    }
+    
+    .cta-content {
+        flex: 1;
+    }*/
+    
+    .cta-content .Para_heading{
+        font-size: 1.9rem;
+        margin-bottom: 15px;
+    }
+    
+    .cta-content .Para_Content{
+        font-size: 1.3rem;
+        margin-bottom: 20px;
+        color: #555;
+    }
+    
+    .cta-content .join {
+        display: inline-block;
+        background-color: #0a0c38;
+        color: #fff;
+        padding: 10px 20px;
+        text-decoration: none;
+        border-radius: 5px;
+        font-weight: bold;
+    }
+    .video-wrapper {
+        position: relative;
+        max-width: 400px;
+        width: 100%;
+    }
+    .cta_video {
+        width: 100%;
+        border-radius: 10px;
+    }
+    
+    
+    .play-button {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 60px;
+        height: 60px;
+        background-color: red;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        z-index: 10;
+    }
+    
+    .play-button::before {
+        content: '';
+        border: solid white;
+        border-width: 0 0 0 20px;
+        width: 0;
+        height: 0;
+        display: block;
+        transform: translateX(3px);
+        border-top: 10px solid transparent;
+        border-bottom: 10px solid transparent;
+    }
+    .cta-content {
+        flex: 1;
+    }
+    
+    
+/* Responsive */
+@media screen and (max-width: 768px) {
+    .navbar .nav-links {
+        display: none;
+        flex-direction: column;
+        background: #000;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 100%;
+    }
+    .navbar .nav-links.active {
+        display: flex;
+    }
+    .navbar .hamburger {
+        display: block;
+    }
+    .App {
+        flex-direction: column;
+        text-align: center;
+       
+    }
+    .App .content, .App .App-image {
+        max-width: 100%;
+    }
+    
+    .App-image .image_appDev{
+        width: 50vw;
+        height: 50vh;
+        margin-left: -5rem !important;
+        margin-top: 5rem !important;
+    }
+    .App .content .main-content {
+     text-align: center;
+     font-size: 18px !important;
+     margin-top: 2rem !important;
+        }
+    .App .content .main-heading{
+        margin-top: -1rem !important;
+    }   
+    
+    .Master .Master-heading {
+        margin-top: 1rem;
+        font-size: 22px;
+        margin-left: -50px ;
+    }
+   
+       
+        .call-to-action {
+            flex-direction: column;
+            text-align: center;
+        }
+    
+        .call-to-action .cta_video {
+            margin-bottom: 20px;
+        }
+        .list{
+            margin-top: 1rem;
+            margin-left: -3rem;
+            font-size: 16px;
+            text-align: left;
+           }
+    }
+          
+
+/* -------Media Queries-------------*/
+@media(min-width: 300px) and (max-width:501px){
+    .logo img {
+        width: 180px;
+        height: 60px;
+        margin-top: 1rem;
+        margin-left: -2rem;
+      }
+     
+    .App .content .main-heading{
+        font-size: 20px;
+        font-weight: 18px;
+        margin-bottom: 20px;
+        text-align: center;
+        margin-left: -2rem;
+    }
+    
+       .App .content .main-content {
+        margin-bottom: 20px;
+        font-size: 15px !important;
+        display: flex;
+        justify-content: space-between;
+        margin-left: -2rem;
+        word-spacing: -1px;
+    }
+    .App .App-image{
+        width: 100%;
+        }
+    .App-image .image_appDev{
+        width: 80vw;
+        height: 65vh;
+        margin-left: -4rem;
+        margin-top: 4rem;
+    }
+    .box{
+        /*width: 100%; 
+        height: auto; */
+        height: 75vh;
+        }
+    .navbar .hamburger {
+        /*margin-left: -22rem;*/
+        margin-right: 1rem;
+    }
+
+    .card-content .card_main_heading{
+        font-size: 28px;
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+    }
+
+     .card_main_paragraph{
+        margin-bottom: 7rem;
+        margin-top: 1rem;
+        text-align: center;
+        font-size: 14px;
+    }
+    .card_Section .cards{
+    display: flex;
+    flex-direction: column;
+    margin-top: 17rem;
+    gap: 1px;
+    }
+    /* .card_Section .dotted-line{
+      margin-top: -2rem;
+      margin-left: 1rem;
+      margin-right: 1rem;
+    } */
+    .Master{
+        margin-top: 30rem;
+        flex-direction: column;
+        display: flex;
+        padding: 8px;
+    }
+   
+    .Master-heading{
+        font-size: 30px;
+        margin-bottom: 20px;
+        margin-top: 10px;
+        margin-left: -3rem;
+    }
+    .Master .Master-content .Master_paragraph{
+        margin-left: -3rem;
+        margin-bottom: 15px;
+        font-size: 16px;
+        text-align: left;
+    }
+    .Master-image .image2_app{
+        width: 90vw;
+        /* Scale image to fit the container without overflow */
+        height: 70vh;
+        margin-top: 60px;
+        margin-right: 0px;
+    }
+    .card {
+        padding: 30px;
+        margin-top: 2rem;
+    }
+  
+    .video-wrapper {
+        position: relative;
+        max-width: 100%;
+        width: 100%;
+    }
+   }
+ 
+ @media(min-width: 501px) and (max-width:768px){
+  .navbar .hamburger{
+       margin-right: 3rem;
+    }
+    .App .content .main-heading{
+        font-size: 34px;
+        margin-bottom: 20px;
+        margin-right: 3rem;
+    }
+
+    .App .content .main-content {
+        margin-right: 2rem;
+        text-align: justify;
+    
+ }
+ .App .btn {
+    margin-right: 4rem;
+}
+.App .App-image{
+    width: 100%;
+    }
+.App-image .image_appDev{
+    width: 60vw;
+    height: 80vh;
+    margin-left: -4rem;
+    margin-top: 2rem;
+}
+.card_Section .cards{
+display: grid;
+grid-template-columns: repeat(2, 1fr); /* 2 columns grid */
+padding: 100px;
+}
+.card {
+    width: 230px;
+    height: 300px;
+    margin-top: 1rem;
+}
+.cards{
+    /* margin-bottom: -6rem; */
+    margin-top: -12rem;
+}
+.card-content .card_main_heading{
+    font-size: 28px;
+    margin-top:2rem;
+    margin-bottom: 1rem;
+}
+
+ .card_main_paragraph{
+    margin-bottom: 7rem;
+    margin-top: 1rem;
+    text-align: center;
+    font-size: 14px;
+}
+.Master{
+    margin-top: 22rem;
+    flex-direction: column;
+    display: flex;
+    padding: 6px;
+}
+
+.Master-heading{
+    font-size: 30px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    margin-left: -3rem;
+}
+.Master .Master-content .Master_paragraph{
+    margin-left: -3rem;
+    margin-bottom: 15px;
+    font-size: 16px;
+    text-align: left;
+}
+.Master-image .image2_app{
+    width: 80vw !important;
+    height: 70vh;
+    margin-top: 80px !important;
+    margin-right: 0px;
+}
+}
+ @media(min-width: 768px) and (max-width:900px){
+    
+     .navbar .nav-links {
+        margin-right: 4rem;
+    }
+     .App-image .image_appDev{
+        height: 100vh;
+        width: 40vw;
+        margin-left: 3rem;
+        margin-bottom: 8rem;
+        margin-top: 6rem !important;
+    }
+    .App .content .main-content {
+        margin-bottom: 20px;
+        font-size: 20px !important;
+        display: flex;
+        justify-content: space-between;
+        margin-left: -2rem;
+        word-spacing: -2px;
+        margin-top: 1rem;
+}
+.App .content .main-heading{
+    font-size: 32px;
+    font-weight: 18px;
+    margin-bottom: 20px;
+    text-align: center;
+    margin-left: -2rem;
+    margin-top: -9rem;
+}
+.App .btn {
+    margin-top: 1rem;
+    font-size: 20px;
+   
+}
+.card_Section .cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columns */
+    gap: 250px 50px; /* First value: row-gap, Second value: column-gap */
+    padding: 20px;
+    margin-left: 80px;
+    
+} 
+/* .card-content{
+    
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+} */
+
+.cards{
+    margin-top: 4rem;
+    padding: 10px;
+}
+.card{
+    width: 200px;
+    height: 250px;
+    padding: 10px;
+    margin-top: -34rem;
+    
+}
+ .card_main_heading, 
+.card_main_paragraph {
+    order: -1; 
+    margin-bottom: 15x;
+    margin-top: 280px;
+}
+ .card .card_heading {
+    font-size: 22px;
+    margin-top: 20px;
+    
+} 
+.card_main_paragraph{
+    margin-bottom: 280px;
+    margin-top: 20px;
+} 
+
+
+.icon i{
+    font-size: 24px;
+}
+.Master-image .image2_app{
+    width: 36vw;
+    /* Scale image to fit the container without overflow */
+    height: 70vh;
+    margin-top: 60px;
+    margin-right: -3rem;
+}
+.Master {
+    margin-top: -3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px 20px;
+    margin-left: 0px;
+    margin-right: 0px;
+ }
+ .Master .Master-content {
+    max-width: 100%;
+    margin-top: 20px;
+}
+ .Master .Master-heading {
+    font-size: 30px;
+    margin-bottom: 20px;
+    margin-top: -50px;
+    margin-left: 3rem;
+}
+
+.Master .Master-content .Master_paragraph{
+    margin-left: 3rem;
+    margin-bottom: 20px;
+    font-size: 16px;
+    text-align: justify;
+    color: #555;
+}
+.list{
+margin-top: 1rem;
+margin-left: 4rem;
+font-size: 16px;
+}
+
+.Master .Master-image {
+margin-top: -80px;
+margin-right: 2rem;
+}
+
+}
+
+ @media(min-width: 900px) and (max-width:1200px){
+   .App-image .image_appDev{
+    height: 90vh;
+    width: 35vw;
+    margin-left: 3rem;
+    margin-bottom: 1rem;
+}
+.App .content .main-content {
+    margin-bottom: 20px;
+    font-size: 18px;
+    margin-left: -2rem;
+    word-spacing: -1px;
+    margin-top: 2rem;
+}
+.App .content .main-heading{
+    font-size: 30px;
+    margin-top: -10px;
+    margin-right: 80px;
+}
+.navbar .nav-links {
+    margin-right: 4rem;
+}
+.cards{
+    margin-top: 4rem;
+    padding: 10px;
+}
+.card{
+    width: 230px;
+    height: 280px;
+    padding: 20px;
+    margin-top: -34rem;
+   
+}
+.card-content .card_main_heading{
+    margin-top: 2rem;
+    margin-bottom: -4rem;
+    font-size: 30px;
+}
+.card_main_paragraph{
+    margin-bottom: 9rem;
+    margin-top: 5rem;
+    text-align: center;
+}
+.Master-image .image2_app {
+    width: 36vw;
+    /* Scale image to fit the container without overflow */
+    height: 70vh;
+    margin-top: 60px;
+    margin-right: -3rem;
+}
+.Master {
+    margin-top: -14rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px 20px;
+    margin-left: 0px;
+    margin-right: 0px;
+   
+ }
+ .Master .Master-content {
+    max-width: 100%;
+}
+.Master-heading {
+    font-size: 34px;
+    margin-bottom: 20px;
+    margin-top: -140px;
+    margin-left: 3rem;
+}
+
+.Master .Master-content .Master_paragraph{
+    margin-left: 3rem;
+    margin-bottom: 20px;
+    font-size: 16px;
+    text-align: justify;
+    color: #555;
+}
+.list{
+margin-top: 1rem;
+margin-left: 4rem;
+font-size: 16px;
+}
+
+.Master .Master-image {
+margin-top: -80px;
+margin-right: 2rem;
+}
+
+}
+ @media(min-width: 1200px) and (max-width:1440px){
+   
+     .App .content .main-content {
+        margin-bottom: 20px;
+        font-size: 22px;
+        margin-left: -2rem;
+        word-spacing: -1px;
+        margin-top: 2rem;
+    }
+    .App .content .main-heading{
+        font-weight: 18px;
+        margin-top: -4rem;
+        margin-left: -2rem;
+    }
+   
+ .App .content {
+    max-width: 50%;
+}
+ .App-image .image_appDev{
+    height: 70vh;
+    width: 30vw;
+    margin-left: 6rem;
+    margin-bottom: 5rem;
+    margin-top: -2rem;
+}
+.cards{
+    margin-top: 4rem;
+    padding: 10px;
+}
+.card{
+    width: 250px;
+    height: 300px;
+    padding: 20px;
+    margin-top: -34rem;
+}
+.card-content .card_main_heading{
+    margin-top: 3rem;
+    margin-bottom: -4rem;
+}
+.card_main_paragraph{
+    margin-bottom: 6rem;
+    margin-top: 5rem;
+}
+.Master-image .image2_app {
+    width: 36vw;
+    /* Scale image to fit the container without overflow */
+    height: 70vh;
+    margin-top: 60px;
+    margin-right: -3rem;
+}
+.Master {
+    margin-top: -16rem;
+    display: flex;
+    justify-content: space-between;
+    padding: 100px 20px;
+    margin-left: 0px;
+    margin-right: 0px;
+ }
+ .Master .Master-content {
+    max-width: 100%;
+}
+.Master-heading {
+    font-size: 34px;
+    margin-bottom: 20px;
+    margin-top: -100px;
+    margin-left: 3rem;
+}
+
+.Master .Master-content .Master_paragraph{
+    margin-left: 3rem;
+    margin-bottom: 20px;
+    font-size: 18px;
+    text-align: left;
+    color: #555;
+}
+.list{
+margin-top: 1rem;
+margin-left: 4rem;
+font-size: 18px;
+}
+
+.Master .Master-image {
+margin-top: -80px;
+margin-right: 2rem;
+}
+
+ }
