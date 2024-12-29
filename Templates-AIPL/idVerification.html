@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ID Verification</title>
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="idverifyCaptcha.css">
+
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="./images/agratas-main-logo.png" alt="Agratas Logo" class="agrataslog">
+            </div>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#" class="myLink">Home</a></li>
+                <li><a href="#" class="myLink">Contact Us</a></li>
+                <li><a href="#" class="myLink">About Us</a></li>
+                <li><a href="#" class="myLink">Get Started</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+    <section>
+        <div class="container">
+            <h1 id="main-heading">ID VERIFICATION</h1>
+            <div class="detail-box">
+                <span class="inputheading">Employee ID</span>
+                <input type="text" placeholder="Enter your Employee ID" class="inputfield">
+            </div>
+            <div class="detail-box">
+                <span class="inputheading">Password</span>
+                <input type="password" placeholder="Enter your Password" class="inputfield">
+            </div>
+            <div class="detail-box box2">
+                <p id="cjy">Please don't forget to validate CAPTCHA. Maximum attempts allowed: [2]</p>
+            </div>
+            <hr>
+            <div class="box3">
+                <div id="captchaMessage" class="error-message">
+
+                </div><br>
+                <div class="captcha-container">
+                    <input type="checkbox" id="captchaCheckbox">
+                    <label for="captchaCheckbox">I'm not a robot</label>
+                </div>
+            </div>
+            <div class="box4">
+                <button id="log-btn">Log In</button>
+                <div class="row">
+                    <p class="para-dont">Don't have an account?</p>
+                    <p class="reset">Reset Password</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+<script src="script.js"></script>
+</html>
